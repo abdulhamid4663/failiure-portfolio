@@ -12,6 +12,16 @@ img {
     width: 100%;
     padding: 0 1rem;
 }
+a, a:visited, a:hover {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
 .justify-content-center {
     justify-content: center;
 }
@@ -20,4 +30,158 @@ img {
 }
 .align-items-center {
     align-items: center;
+}
+.btn-primary {
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: #F15B22;
+    border-radius: 5px;
+    border: 1px solid #F15B22;
+    padding: 20px 25px;
+}
+.btn-light {
+    color: #F15B22;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: #fff;
+    border-radius: 5px;
+    border: 1px solid #fff;
+    padding: 20px 25px;
+}
+.btn-primary:hover, .btn-light:hover {
+    cursor: pointer;
+    background-color: transparent;
+}
+.section-title {
+    color: #151414;
+    font-size: 40px;
+    font-weight: 700;
+}
+.section-text {
+    color: #444343;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+}
+/* HEADER + BANNER SECTION STARTS */
+.header {
+    background-image: url('../images/banner/banner1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left center;
+    min-height: 808px;
+}
+.header .row {
+    min-height: 808px;
+}
+.header .header-content {
+    text-align: right;
+    width: 50%;
+}
+.header .header-content h1 {
+    color: #151414;
+    font-size: 65px;
+    font-weight: 700;
+}
+.header .header-content p {
+    margin: 24px 0 32px;
+}
+.header .btn-primary:hover {
+    color:#F15B22;
+}
+/* HEADER + BANNER SECTION ENDS */
+
+/* FAILIURE SECTION STARTS */
+.failiure {
+    margin: 130px 0;
+}
+.failiure .failiure-person {
+    text-align: center;
+}
+.failiure .row {
+    gap: 87px;
+}
+.failiure .failiure-content {
+    width: 100%;
+}
+.failiure .failiure-content > p {
+    margin: 24px 0 16px;
+}
+.failiure .failiure-list i {
+    color: #16D887;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+/* FAILIURE SECTION ENDS */
+
+/* MY PLANS SECTION STARTS */
+.my-plans {
+    text-align: center;
+    margin-bottom: 130px;
+}
+.my-plans .my-plans-header {
+    margin-bottom: 55px;
+}
+.my-plans .plans {
+    width: 25%;
+}
+.my-plans .plans h4 {
+    color: #151414;
+    font-size: 30px;
+    font-weight: 700;
+    margin: 18px 0 16px;
+}
+.my-plans .plans p {
+    color: #737272;
+    font-size: 25px;
+    font-weight: 500;
+}
+/* MY PLANS SECTION ENDS */
+
+/* MINDSET SECTION STARTS */
+.mindset {
+    margin-bottom: 130px;
+}
+.mindset .mindset-image {
+    position: relative;
+}
+.mindset .mindset-image {
+    background-image: linear-gradient(to right, #F15B22, transparent), url('../images/watch.png');
+    background-size: cover;
+    min-height: 300px;
+    width: 100%;
+    border-radius: 8px;
+}
+
+.mindset .mindset-image .mindset-text {
+    position: absolute;
+    top: 50%;
+    left: 64px;
+    transform: translateY(-50%);
+    z-index: 20;
+}
+.mindset .mindset-image .mindset-text h3 {
+    color: white;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 24px;
+    max-width: 460px;
+}
+.mindset .mindset-image .mindset-text .btn-light:hover {
+    color: #fff;
+}
+/* MINDSET SECTION ENDS */
+@media (min-width: 1200px) {
+    .container {
+        width: 1142px;
+        margin: auto;
+        padding: 0;
+    }
+    .failiure .failiure-person {
+        text-align: start;
+    }
+    .failiure .failiure-content {
+        width: 46%;
+    }
 }
