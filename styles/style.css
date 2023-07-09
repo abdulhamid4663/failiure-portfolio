@@ -28,6 +28,12 @@ ul {
 .justify-content-between {
     justify-content: space-between;
 }
+.justify-content-start {
+    justify-content: flex-start;
+}
+.justify-content-end {
+    justify-content: flex-end;
+}
 .align-items-center {
     align-items: center;
 }
@@ -172,6 +178,58 @@ ul {
     color: #fff;
 }
 /* MINDSET SECTION ENDS */
+
+/* FOOTER SECTION STARTS */
+.footer {
+    background-color: #151414;
+    padding: 130px 0;
+}
+.footer .footer-contact {}
+.footer .footer-contact h2 {
+    color: #F8F8F8;
+    font-size: 45px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+.footer .footer-contact p {
+    color: white;
+}
+.footer .footer-contact .footer-description {
+    margin-bottom: 24px;
+}
+.footer .footer-contact .footer-email {
+    margin-bottom: 16px;
+}
+.footer .footer-contact .footer-phone {
+    margin-bottom: 32px;
+}
+.footer .footer-contact .footer-contact-social a:not(:last-of-type) {
+    margin-right: 16px;
+}
+.footer .footer-box {
+    width: 100%;
+}
+.footer .footer-sub {}
+.footer .footer-sub-box {}
+.footer .footer-sub-box h4 {
+    color: white;
+    font-size: 25px;
+    font-weight: 600;
+}
+.footer .footer-sub-box input[type="email"] {
+    width: 100%;
+    padding: 21px;
+    border: 1px solid #fff;
+    border-radius: 8px;
+    background-color: transparent;
+    color: #F3F3F3;
+    font-size: 18px;
+    font-weight: 400;
+    margin: 30px 0 16px;
+}
+
+
+/* FOOTER SECTION ENDS */
 @media (min-width: 1200px) {
     .container {
         width: 1142px;
@@ -183,5 +241,8 @@ ul {
     }
     .failiure .failiure-content {
         width: 46%;
+    }
+    .footer .footer-box {
+        width: 44%;
     }
 }
